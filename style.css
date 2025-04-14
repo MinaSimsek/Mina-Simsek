@@ -1,0 +1,232 @@
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f4f4;  /* Genel arka plan */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Renk Teması */
+:root {
+  --primary: #b5a3d1;  /* Soft Lila */
+  --accent: #e1a7c6;   /* Soft Pembe */
+  --light: #f1ece6;    /* Açık Ekru */
+  --dark: #4a3f58;     /* Daha derin koyu ton */
+  --hover-color: #d48ab7; /* Hover için daha şık pembe tonu */
+}
+
+/* Header */
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1.5rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo ve Yazı Konteyneri */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px; /* Logo boyutu */
+  height: auto;
+}
+
+.logo-text {
+  font-size: 2.7rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--dark);
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: var(--accent);
+  padding: 0.5rem 0;
+  margin: 0;
+  border-radius: 25px;
+}
+
+nav ul li {
+  margin: 0.5rem 1.5rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background: var(--dark);
+  transform: translateY(-3px);
+}
+
+/* Ana Bölümler */
+section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background: var(--light);  /* Tüm bölüm için açık ekru arka plan */
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  color: var(--dark);
+  border-bottom: 3px solid var(--accent);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Hakkımda */
+#about {
+  background: var(--light);  /* Açık Ekru */
+}
+
+.about p {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Projeler */
+#projects {
+  background: var(--light); /* Açık Ekru */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card img,
+.card video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 2px solid #ddd;
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  margin-bottom: 0.8rem;
+  color: var(--dark);
+}
+
+.card-content a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Tasarımlar */
+#designs {
+  background: var(--light);  /* Açık Ekru */
+}
+
+.card-grid img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* İletişim */
+#contact {
+  background: var(--light); /* Açık Ekru */
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.contact-icons a {
+  font-size: 2.5rem;
+  color: var(--dark);
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: var(--hover-color);
+}
+
+.map-container {
+  margin-top: 2rem;
+  max-width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+}
+
+/* Footer */
+footer {
+  background: var(--light); /* Açık Ekru */
+  color: var(--dark);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+footer a {
+  color: var(--primary);
+}
