@@ -6,11 +6,6 @@
   <title>Mina Şimşek | Portfolyo</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="img/logo.png" />
-  <script>
-    function openInNewTab(url) {
-      window.open(url, '_blank');
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -28,23 +23,29 @@
     </nav>
   </header>
 
-  <!-- Hakkımda -->
+ 
   <section id="about" class="about">
     <h2>Hakkımda</h2>
     <p>Merhaba! Ben Mina Şimşek. Mimarlık alanındaki yaratıcı projelerimi ve tasarımlarımı bu portfolyo sitesinde sizlerle paylaşıyorum.</p>
   </section>
 
-  <!-- Projeler -->
+  
   <section id="projects">
     <h2>Projeler</h2>
     <div class="card-grid">
       <div class="card">
+        <div class="image-container">
+          <img src="img/proje1.jpeg" alt="Proje 1" class="project-img" />
+        </div>
         <div class="card-content">
           <h3>Proje PDF 1</h3>
           <a href="docs/proje1.pdf" download>PDF'i indir</a>
         </div>
       </div>
       <div class="card">
+        <div class="image-container">
+          <img src="img/proje2.jpeg" alt="Proje 2" class="project-img" />
+        </div>
         <div class="card-content">
           <h3>Proje PDF 2</h3>
           <a href="docs/proje2.pdf" download>PDF'i indir</a>
@@ -61,18 +62,18 @@
     </div>
   </section>
 
-  <!-- Tasarımlar -->
+  
   <section id="designs">
     <h2>Tasarım</h2>
     <div class="card-grid">
       <div class="card">
-        <img src="img/tasarim1.jpeg" alt="Tasarım 1" />
+        <img src="img/tasarim1.jpeg" alt="Tasarım 1" class="design-img" />
         <div class="card-content">
           <h3>Tasarım JPEG 1</h3>
         </div>
       </div>
       <div class="card">
-        <img src="img/tasarim2.jpeg" alt="Tasarım 2" />
+        <img src="img/tasarim2.jpeg" alt="Tasarım 2" class="design-img" />
         <div class="card-content">
           <h3>Tasarım JPEG 2</h3>
         </div>
@@ -86,7 +87,7 @@
     </div>
   </section>
 
-  <!-- İletişim -->
+  
   <section id="contact" class="contact">
     <h2>İletişim</h2>
     <div class="contact-icons">
@@ -106,5 +107,12 @@
   <footer>
     © 2025 Mina Şimşek | Tüm Hakları Saklıdır.
   </footer>
+
+  
+  <div class="bubble left" style="top: 30%; --img:url('img/yesilalan.png')">Yeşil Alan</div>
+  <div class="bubble left" style="top: 60%; --img:url('img/modernmimari.jpg')">Modern Mimari</div>
+  <div class="bubble right" style="top: 35%; --img:url('img/surdurulebilirtasarim.jpg')">Sürdürülebilirlik</div>
+  <div class="bubble right" style="top: 65%; --img:url('img/yerelmalzeme.jpg')">Yerel Malzeme</div>
+
 </body>
 </html>
