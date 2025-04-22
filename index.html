@@ -6,6 +6,7 @@
   <title>Mina Şimşek | Portfolyo</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="img/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -23,13 +24,22 @@
     </nav>
   </header>
 
- 
-  <section id="about" class="about">
-    <h2>Hakkımda</h2>
-    <p>Merhaba! Ben Mina Şimşek. Mimarlık alanındaki yaratıcı projelerimi ve tasarımlarımı bu portfolyo sitesinde sizlerle paylaşıyorum.</p>
+  <!-- Hero - Ana Tematik Alan -->
+  <section class="hero">
+    <div class="keyword-box">
+      <div class="keyword" style="--img:url('img/surdurulebilirtasarim.jpg')">SÜRDÜRÜLEBİLİR TASARIM</div>
+      <div class="keyword" style="--img:url('img/yesilalan.png')">YEŞİL ALAN</div>
+      <div class="keyword" style="--img:url('img/modernmimari.jpg')">MODERN MİMARİ</div>
+      <div class="keyword" style="--img:url('img/yerelmalzeme.jpg')">YEREL MALZEME TASARIMI</div>
+    </div>
   </section>
 
-  
+  <!-- Hakkımda -->
+  <section id="about" class="about-mini">
+    <p>Ben Mina Şimşek, mimariyi doğayla buluşturan tasarımlara tutkuyla bağlıyım.</p>
+  </section>
+
+  <!-- Projeler -->
   <section id="projects">
     <h2>Projeler</h2>
     <div class="card-grid">
@@ -62,7 +72,7 @@
     </div>
   </section>
 
-  
+  <!-- Tasarımlar -->
   <section id="designs">
     <h2>Tasarım</h2>
     <div class="card-grid">
@@ -87,7 +97,7 @@
     </div>
   </section>
 
-  
+  <!-- İletişim -->
   <section id="contact" class="contact">
     <h2>İletişim</h2>
     <div class="contact-icons">
@@ -98,7 +108,7 @@
     </div>
     <div class="map-container">
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1200.1769361917863!2d28.98461248001828!3d41.03180729890162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab77561d960a3%3A0xb828c7df61f7298f!2sMimar%20Sinan%20G%C3%BCzel%20Sanatlar%20%C3%9Cniversitesi%20F%C4%B1nd%C4%B1kl%C4%B1%20Yerle%C5%9Fkesi!5e0!3m2!1str!2str!4v1712949187475" 
+        src="https://www.google.com/maps/embed?pb=..." 
         allowfullscreen="" loading="lazy">
       </iframe>
     </div>
@@ -107,12 +117,5 @@
   <footer>
     © 2025 Mina Şimşek | Tüm Hakları Saklıdır.
   </footer>
-
-  
-  <div class="bubble left" style="top: 30%; --img:url('img/yesilalan.png')">Yeşil Alan</div>
-  <div class="bubble left" style="top: 60%; --img:url('img/modernmimari.jpg')">Modern Mimari</div>
-  <div class="bubble right" style="top: 35%; --img:url('img/surdurulebilirtasarim.jpg')">Sürdürülebilirlik</div>
-  <div class="bubble right" style="top: 65%; --img:url('img/yerelmalzeme.jpg')">Yerel Malzeme</div>
-
 </body>
 </html>
